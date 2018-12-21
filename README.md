@@ -1,6 +1,6 @@
 # renderR
 
-A command line interface for ```R rmardown::render```. 
+A command line interface for ```rmarkdown::render```. 
 
 This cli allows for a quick and easy interface to render. It allows modification 
 of the output file name, the directory the output is placed and the format of the output. 
