@@ -1,7 +1,6 @@
-# Script for running a command line interface to the rmarkdown::render function
-# this is intended to allow more quck and easy knitting of files
-
 #!/usr/bin/env Rscript --vanilla
+
+# Script for running a command line interface to the rmarkdown::render function
 
 library(argparser, quietly = TRUE)
 library(crayon)
