@@ -63,5 +63,5 @@ if (argv$verbose == TRUE){
 
   cat(cli::symbol$tick, "\n")
 
-  cat("File", argv$output_file, " created in directory ", argv$output_dir, "\n")
+  cat("File", argv$output_file, "created in directory", argv$output_dir, "\n")
 }
