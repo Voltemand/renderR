@@ -39,8 +39,11 @@ if (is.na(argv$output_dir)) {
   argv$output_dir <- dirname(argv$input_file)
 }
 
-if (strsplit(basename(argv$output_file), "\\.")[[1]][2] != strsplit(argv$format, "\\_")[[1]][1]){
-  stop("File extension and knitting format do not match!")
+if (!is.null(argv$output_file)){
+  if (strsplit(basename(argv$output_file), "\\.")[[1]][2] !=
+      strsplit(argv$format, "\\_")[[1]][1]){
+    stop("File extension and knitting format do not match!")
+  }
 }
 
 if (argv$verbose == TRUE){
