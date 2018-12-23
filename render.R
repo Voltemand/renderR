@@ -53,7 +53,7 @@ if (argv$verbose == TRUE){
                     output_file = argv$output_file,
                     quiet = FALSE)
 } else {
-  cat("Rendering file:", basename(argv$input_file), "... "))
+  cat("Rendering file:", basename(argv$input_file), "... ")
 
   rmarkdown::render(input = argv$input_file,
                     output_dir = argv$output_dir,
@@ -63,5 +63,5 @@ if (argv$verbose == TRUE){
 
   cat(cli::symbol$tick, "\n")
 
-  cat("File", bold(argv$output_file), "- created in directory -", bold(argv$output_dir), "\n")
+  cat("File", argv$output_file, " created in directory ", argv$output_dir, "\n")
 }
